@@ -56,11 +56,15 @@ public class Words
 		int vowelCount = 0;
 
 		//for each Word in the ArrayList "words" loop
-		for(Word word: wordList)
+		for(int i=wordList.size()-1; i>=0;i--)
 			//if the Word has "size" characters
-			//dont know how to remove the word
-			if(word.getLength() == size)
-				vowelCount++;
+			
+			if(wordList.get(i).getLength() == size)
+			{
+				vowelCount+=wordList.get(i).getNumVowels();
+				wordList.remove(i);
+			}
+
 
 		return vowelCount;
 	}
