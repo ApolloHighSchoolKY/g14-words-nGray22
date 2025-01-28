@@ -58,6 +58,7 @@ public class Words
 		//for each Word in the ArrayList "words" loop
 		for(Word word: wordList)
 			//if the Word has "size" characters
+			//dont know how to remove the word
 			if(word.getLength() == size)
 				vowelCount++;
 
